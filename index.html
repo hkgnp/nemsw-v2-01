@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <!-- SIDEBAR START -->
+        <div class="col-2 border" style="height: 100vh; width: 12em">
+          <h1 class="text-center p-3 mb-4" style="height: 1.5em">
+            <i class="fas fa-clinic-medical"></i>
+          </h1>
+          <h6 class="my-3 ps-2">
+            <i class="fas fa-tachometer-alt"></i> Dashboard
+          </h6>
+          <h6 class="my-3 py-2 ps-2 bg-primary rounded text-white">
+            <i class="fas fa-user-friends"></i> Patients
+          </h6>
+          <h6 class="my-3 ps-2"><i class="fas fa-cog"></i> Settings</h6>
+        </div>
+        <!-- SIDEBAR END -->
+        <!-- MAINBAR START -->
+        <div class="col border bg-light">
+          <!-- SEARCHBAR START -->
+          <div class="row p-2">
+            <div class="col d-flex">
+              <div class="w-50">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="searchbox"
+                  placeholder="Search for a patient using NRIC or name"
+                />
+              </div>
+              <div>
+                <i class="fas fa-search px-2 pt-2"></i>
+              </div>
+            </div>
+          </div>
+          <!-- SEARCHBAR END -->
+          <div class="row p-2 bg-white mx-2 border-top border-primary">
+            <h3 class="mt-3">
+              <span class="badge bg-success">S1234567A</span>
+              <span class="align-bottom">Tan Ah Kow @ Chen Ah Kow</span>
+            </h3>
+          </div>
+          <div class="row p-2" style="height: 80vh">
+            <div class="col-9 mx-2 bg-white border-top border-danger py-3">
+              <!-- MENU START -->
+              <div class="col bg-white rounded px-2">
+                <ul class="nav nav-pills fs-8">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#"
+                      >Case Update</a
+                    >
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      data-bs-toggle="dropdown"
+                      href="#"
+                      role="button"
+                      aria-expanded="false"
+                      >Financial Assistance</a
+                    >
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a class="dropdown-item" href="#">Government Funds</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Internal Funds</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Something else here</a
+                        >
+                      </li>
+                      <li><hr class="dropdown-divider" /></li>
+                      <li>
+                        <a class="dropdown-item" href="#">Separated link</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Attachments</a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link disabled"
+                      href="#"
+                      tabindex="-1"
+                      aria-disabled="true"
+                      >Disabled</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <!-- MENU END -->
+              <div class="form-floating mt-3 mx-2">
+                <textarea
+                  class="form-control"
+                  id="case-updates"
+                  style="height: 15em"
+                ></textarea>
+                <label for="case-updates">Case Updates</label>
+              </div>
+              <div class="mb-3 mx-2 mt-2">
+                <input
+                  class="form-control-sm"
+                  type="file"
+                  id="formFileMultiple"
+                  multiple
+                />
+              </div>
+            </div>
+            <div class="col mx-2 bg-white border-top border-success py-3">
+              <div class="border-bottom border-warning py-2">
+                <div class="badge bg-secondary mb-2">Address</div>
+                <div>Blk 123 Serangoon Avenue 3 <br />#13-305 S210123</div>
+              </div>
+              <div class="border-bottom border-warning py-2">
+                <div class="badge bg-secondary mb-2">Contact</div>
+                <div>
+                  <i class="fas fa-mobile-alt"></i> 91234567<br /><i
+                    class="fas fa-home"
+                  ></i>
+                  61234567
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- MAINBAR END -->
+      </div>
+    </div>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
