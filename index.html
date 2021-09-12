@@ -20,7 +20,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="index.css" />
-    <title>Hello, world!</title>
+    <title>Patient Management System</title>
   </head>
   <body>
     <div class="container-fluid">
@@ -62,15 +62,25 @@
             <h3 class="mt-3">
               <span class="badge bg-success">S1234567A</span>
               <span class="align-bottom">Tan Ah Kow @ Chen Ah Kow</span>
+              <span class="badge bg-danger fs-6">MG</span>
+              <span class="badge bg-danger fs-6">LPA</span>
             </h3>
           </div>
-          <div class="row p-2" style="height: 80vh">
+          <div class="row p-2">
             <div class="col-9 mx-2 bg-white border-top border-danger py-3">
               <!-- ISSUES START -->
-              <div class="bg-white rounded px-2">ISSUES</div>
+              <h4>ISSUES</h4>
+              Day care referral
+              <div class="badge bg-warning mb-2">Johnson Tan (NUH)</div>
+              <div class="badge bg-secondary mb-2">20-10-2020</div>
+              <hr />
+              MediFund assistance
+              <div class="badge bg-warning mb-2">Johnson Tan (NUH)</div>
+              <div class="badge bg-secondary mb-2">21-07-2020</div>
+              <hr />
               <!-- ISSUES END -->
               <!-- MENU START -->
-              <div class="bg-white rounded px-2">
+              <div class="bg-white rounded px-2 mb-3">
                 <ul class="nav nav-pills fs-8">
                   <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="#"
@@ -119,6 +129,77 @@
                 </ul>
               </div>
               <!-- MENU END -->
+              <!-- ISSUES START -->
+              <div class="row d-flex justify-content-center">
+                <div class="w-100 col-md-8 col-lg-6 mb-3">
+                  <div
+                    class="card shadow-0 border"
+                    style="background-color: #f0f2f5"
+                  >
+                    <div class="card-body p-4">
+                      <div class="card mb-4">
+                        <div class="card-body">
+                          <p>
+                            Patient's son came today to talk about long-term
+                            care plans. Keen to explore nursing home as the
+                            family has a history of discomfort with hiring a
+                            FDW.
+                          </p>
+
+                          <div class="d-flex justify-content-between">
+                            <div class="d-flex flex-row align-items-center">
+                              <img
+                                src="https://mdbootstrap.com/img/Photos/Avatars/img%20(4).jpg"
+                                alt="avatar"
+                                width="25"
+                                height="25"
+                              />
+                              <p class="small mb-0 ms-2">
+                                Martha Stewart (SGH)
+                              </p>
+                            </div>
+                            <div class="d-flex flex-row align-items-center">
+                              <p class="small text-muted mb-0">01-07-2021</p>
+                              <i
+                                class="far fa-thumbs-up mx-2 fa-xs text-black"
+                                style="margin-top: -0.16rem"
+                              ></i>
+                              <p class="small text-muted mb-0">3</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="card mb-4">
+                        <div class="card-body">
+                          <p>Assisted with MediFund assistance.</p>
+
+                          <div class="d-flex justify-content-between">
+                            <div class="d-flex flex-row align-items-center">
+                              <img
+                                src="https://mdbootstrap.com/img/Photos/Avatars/img%20(32).jpg"
+                                alt="avatar"
+                                width="25"
+                                height="25"
+                              />
+                              <p class="small mb-0 ms-2">Johny Bravo (TTSH)</p>
+                            </div>
+                            <div class="d-flex flex-row align-items-center">
+                              <p class="small text-muted mb-0">23-01-2021</p>
+                              <i
+                                class="far fa-thumbs-up mx-2 fa-xs text-black"
+                                style="margin-top: -0.16rem"
+                              ></i>
+                              <p class="small text-muted mb-0">4</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- ISSUES END -->
               <!-- CONTENT START -->
               <div class="form-floating mt-3 mx-2">
                 <textarea
@@ -136,7 +217,7 @@
                   multiple
                 />
               </div>
-              <!-- CONTENT START -->
+              <!-- CONTENT END -->
             </div>
             <div class="col mx-2 bg-white border-top border-success py-3">
               <div class="border-bottom border-warning py-2">
@@ -150,6 +231,27 @@
                     class="fas fa-home"
                   ></i>
                   61234567
+                </div>
+              </div>
+              <div class="border-bottom border-warning py-2">
+                <div class="badge bg-secondary mb-2">Network</div>
+                <div>
+                  <a href="#"
+                    >Open in map <i class="fas fa-external-link-alt"></i
+                  ></a>
+                </div>
+                <div>
+                  <a href="#"
+                    >Open CaseConnect <i class="fas fa-external-link-alt"></i
+                  ></a>
+                </div>
+                <div class="bg-info text-white rounded my-2 p-2">
+                  <h4>HDB</h4>
+                  Lim Ah Kow<br />91234567<br />lak@hdb.gov.sg
+                </div>
+                <div class="bg-info text-white rounded my-2 p-2">
+                  <h4>THK Family Service Centre</h4>
+                  Mark Wahlberg<br />97654321<br />mw@thk.org.sg
                 </div>
               </div>
             </div>
